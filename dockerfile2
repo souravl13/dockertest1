@@ -2,5 +2,5 @@ FROM python:3.10-slim
 WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
-COPY docker_script.py .
-CMD ["python", "docker_script.py"]
+COPY app2.py .
+CMD ["python", "app2.py"]
